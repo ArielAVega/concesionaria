@@ -15,13 +15,18 @@ public class Automovil {
 	}
 
 	public Automovil(String patente, String marca, String modelo, Short anio, Double precio, Colores color) {
-		super();
 		this.patente = patente;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.anio = anio;
 		this.precio = precio;
 		this.color = color;
+	}
+
+	@Override
+	public String toString() {
+		return "Automovil [patente=" + patente + ", marca=" + marca + ", modelo=" + modelo + ", anio=" + anio
+				+ ", precio=" + precio + ", color=" + color + "]";
 	}
 
 	public String getPatente() {
